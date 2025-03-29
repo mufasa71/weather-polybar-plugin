@@ -6,7 +6,10 @@ pub async fn run(q: &str) -> Result<String, Box<dyn std::error::Error>> {
     let client = reqwest::Client::new();
     let res: Weather = client
         .get("https://weatherapi-com.p.rapidapi.com/current.json")
-        .header("x-rapidapi-key", "")
+        .header(
+            "x-rapidapi-key",
+            std::env::var("RAPIDAPI_KEY").expect("RAPIDAPI_KEY not set"),
+        )
         .header("x-rapidapi-host", "weatherapi-com.p.rapidapi.com")
         .query(&[("q", q)])
         .send()
