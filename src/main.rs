@@ -1,14 +1,18 @@
+use clap::Parser;
 use dotenv::dotenv;
-use std::env;
 use weather_polybar::run;
+
+#[derive(Parser, Debug)]
+struct Args {
+    #[arg(short)]
+    q: String,
+}
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     dotenv().ok();
-    let args: Vec<String> = env::args().collect();
-    let q = args.get(1).ok_or("Expected argument 'q'")?;
-
-    let res = run(q).await;
+    let args = Args::parse();
+    let res = run(args.q).await;
 
     if let Ok(e) = res {
         println!("{}", e);
