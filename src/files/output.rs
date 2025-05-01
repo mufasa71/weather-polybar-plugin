@@ -2,7 +2,7 @@ use std::{fs::File, io::BufReader};
 
 use serde::{Deserialize, Serialize};
 
-use crate::plugin::Weather;
+use crate::files::Weather;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct WeatherCode {

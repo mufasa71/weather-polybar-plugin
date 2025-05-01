@@ -1,6 +1,6 @@
 use clap::Parser;
 use dotenv::dotenv;
-use weather_polybar::run;
+use weather_rs::run;
 
 #[derive(Parser, Debug)]
 struct Args {

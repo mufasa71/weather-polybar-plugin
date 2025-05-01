@@ -1,6 +1,6 @@
-pub mod plugin;
+pub mod files;
 
-use plugin::{get_config, output_compact, Weather};
+use files::{get_config, output_compact, Weather};
 
 pub async fn run(q: String) -> Result<String, Box<dyn std::error::Error>> {
     let client = reqwest::Client::new();
