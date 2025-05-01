@@ -2,11 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.0] - 2025-05-01
+
+### 🚀 Features
+
+- Load weather conditions from user config directory
+
 ## [0.1.1] - 2025-05-01
 
 ### ⚙️ Miscellaneous Tasks
 
 - Rename project from weather_polybar to weather-rs
+- Generate changelog [skip-ci]
 
 ## [0.1.0] - 2025-05-01
 
