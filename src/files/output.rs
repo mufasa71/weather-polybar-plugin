@@ -39,7 +39,7 @@ fn get_icon(weather: &Weather) -> String {
 
 pub fn output_compact(weather: &Weather) -> String {
     let mut output = String::new();
-    output.push_str(&get_icon(weather));
+    output.push_str(&format!("{} ", get_icon(weather)));
     output.push_str(&format!("{}°C", weather.current.temp_c));
     output.push_str(&format!(" {}", weather.current.condition.text));
     output
