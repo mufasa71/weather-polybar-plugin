@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2] - 2025-05-02
+
+### 🎨 Styling
+
+- *(output)* Add space after weather icon for better readability
+
 ## [0.2.1] - 2025-05-02
 
 ### 📚 Documentation
@@ -11,6 +17,10 @@ All notable changes to this project will be documented in this file.
 ### 🎨 Styling
 
 - *(output)* Remove extra space after weather icon
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version
 
 ## [0.2.0] - 2025-05-01
 
