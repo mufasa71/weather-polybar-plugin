@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2025-05-02
+
+### 📚 Documentation
+
+- Add README with usage instructions
+
+### 🎨 Styling
+
+- *(output)* Remove extra space after weather icon
+
 ## [0.2.0] - 2025-05-01
 
 ### 🚀 Features
