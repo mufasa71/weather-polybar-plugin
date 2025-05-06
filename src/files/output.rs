@@ -42,5 +42,10 @@ pub fn output_compact(weather: &Weather) -> String {
     output.push_str(&format!("{} ", get_icon(weather)));
     output.push_str(&format!("{}°C", weather.current.temp_c));
     output.push_str(&format!(" {}", weather.current.condition.text));
+
+    if let Some(ref air_quality) = weather.current.air_quality {
+        output.push_str(&format!(" (AQI: {})", air_quality.us_epa_index));
+    }
+
     output
 }

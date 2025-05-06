@@ -37,14 +37,28 @@ pub struct Current {
     uv: f32,
     gust_mph: f32,
     gust_kph: f32,
+    pub air_quality: Option<AirQuality>,
 }
-
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Condition {
     pub text: String,
     pub icon: String,
     pub code: i32,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct AirQuality {
+    co: f32,
+    no2: f32,
+    o3: f32,
+    so2: f32,
+    pm2_5: f32,
+    pm10: f32,
+    #[serde(rename = "us-epa-index")]
+    pub us_epa_index: i32,
+    #[serde(rename = "gb-defra-index")]
+    gb_defra_index: i32,
 }
 
 #[derive(Serialize, Deserialize, Debug)]

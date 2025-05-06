@@ -13,4 +13,6 @@ pub struct Cli {
     pub q: String,
     #[arg(value_enum, short, long, default_value_t = Format::Compact, long_help = "Output format")]
     pub format: Format,
+    #[arg(long, long_help = "Include air quality index")]
+    pub aqi: bool,
 }
