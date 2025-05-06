@@ -1,4 +1,4 @@
-use clap::{Parser, ValueEnum};
+use clap::{crate_version, Parser, ValueEnum};
 
 #[derive(Copy, Clone, PartialEq, Eq, PartialOrd, Ord, ValueEnum, Debug)]
 pub enum Format {
@@ -7,7 +7,7 @@ pub enum Format {
 }
 
 #[derive(Parser, Debug)]
-#[command(version = "0.1.0", about = "Weather CLI tool", long_about = None)]
+#[command(version = crate_version!(), about = "Weather CLI tool", long_about = None)]
 pub struct Cli {
     #[arg(short, long_help = "City name e.g. London, Paris")]
     pub q: String,
