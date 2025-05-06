@@ -2,11 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2025-05-06
+
+### 🚀 Features
+
+- Add support for JSON and compact output formats
+- Add support for Air Quality Index (AQI)
+- *(cli)* Display version from Cargo.toml
+
+### ⚙️ Miscellaneous Tasks
+
+- Remove dotenv dependency and usage
+- Bump version to 0.3.0 and update changelog
+
 ## [0.2.2] - 2025-05-02
 
 ### 🎨 Styling
 
 - *(output)* Add space after weather icon for better readability
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version
 
 ## [0.2.1] - 2025-05-02
 
