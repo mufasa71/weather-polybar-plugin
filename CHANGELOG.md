@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2025-05-11
+
+### 🚀 Features
+
+- Add usage generation with clap_usage
+
 ## [0.3.0] - 2025-05-06
 
 ### 🚀 Features
