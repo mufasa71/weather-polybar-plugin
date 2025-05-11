@@ -41,3 +41,11 @@ impl Cli {
         }
     }
 }
+
+#[test]
+fn verify_cmd() {
+    let cmd = Command::new("weather-rs");
+    let cmd = Cli::augment_args(cmd);
+
+    cmd.debug_assert();
+}
